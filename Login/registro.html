@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="central">
+            <div id="registro">
+                <div class="titulo">
+                    Bienvenido al mundo Boca
+                </div>
+                <form id="registraForm">
+                        <input type="email" class="input" name="email" placeholder="Email" required>
+
+                        <input type="text" class="input" name="usuario" id="usuario" placeholder="Usuario" required>
+
+                        <input type="password" class="input" placeholder="Contraseña" id="password" name="password" required>
+                        
+                        <input type="password" class="input" placeholder="Confirmar Contraseña" name="password2" required>
+
+                    <button type="submit" title="Ingresar" name="Ingresar">Registrarse</button>
+                </form>
+            </div>
+            <div class="inferior">
+                <a href="login.html">Volver</a>
+            </div>            
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registraForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const usuario = document.getElementById('usuario').value;
+            const password = document.getElementById('password').value;
+
+            // Guardar en LocalStorage
+            localStorage.setItem('usuario', usuario);
+            localStorage.setItem('password', password);
+
+            console.log('Usuario registrado:', usuario);
+    console.log('Contraseña registrada:', password);
+
+            alert('Registro exitoso. Ahora puedes iniciar sesion.');
+            window.location.href = "../index.html" // Redirigir a la pagina de inicio 
+});
+    </script>
+
+    
+</body>
+</html>

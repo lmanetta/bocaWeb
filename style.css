@@ -1,0 +1,767 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+:root {
+  --card-width: 250px;
+  --card-height: 350px;
+  --card-transition-duration: 800ms;
+  --card-transition-easing: ease;
+} /*Esto es un cambio de imagenes de camiseta*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(9, 74, 136);
+    flex-wrap: wrap;
+}
+
+/*Header*/
+header{
+    padding-top: 2%;
+    font-family: Montserrat,sans-serif;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(2, 36, 110);
+    position: relative;
+}
+
+h1{
+    position: relative;
+    z-index: 3;
+}
+
+h1 span{
+    color: rgb(243, 178, 41);
+}
+
+header img{
+    width: 15%;
+    padding-bottom: 20px;
+    animation: zoom 5s infinite;
+    position: relative;
+    z-index: 2;
+}
+
+
+#world{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+@keyframes zoom {
+    0% {
+    transform: scale(1);
+    }
+    50%{
+    transform:scale(1.2);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+/* Menú */
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Montserrat,sans-serif;
+    font-size: 14pt;
+    position: sticky;
+    top: 0;
+    background-color: #02236D;
+    margin-bottom: 20px;
+    z-index: 100;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.encabezado li a{
+    background-color: #02236D;
+    color: #fff;
+    border-top: 1px solid #02236D;
+    border-bottom: 1px solid #02236D;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 40px;
+    display: block;
+}
+
+.encabezado li a:hover{
+    background-color: rgb(243 200 41);
+    color: black;
+}
+
+.encabezado > li{
+    float: left; /* Esto lo que va a hacer es colocar el encabezado uno al lado de otro.*/
+}
+
+.encabezado li ul{
+    display: none; /*Hará desaparecer el subencabezado*/
+    position: absolute; /*Nos permite que los bloques se empalmen, evitando que se expandan y se deformen*/
+    min-width: 190px;
+}
+
+.encabezado li:hover > ul{
+    display: block;
+}
+
+.encabezado li ul li{
+    position: relative;
+}
+
+.encabezado li ul li ul{
+    left: 190px;
+    top: 0px;
+}
+
+#holaUsuario{
+  color: rgb(243 200 41);
+}
+
+#holaUsuario:hover{
+  color: black;
+}
+
+/* Estilo de titulos principales */
+.tituloFixture, .tituloPlantel, .tituloCamisetas{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    color: rgba(243, 178, 41);
+    padding-left: 2%;
+}
+
+/*Plantel*/
+.jugadores{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+
+#plantel, #defensores, #volantes, #delanteros, #DT {
+    width: 100%;
+}
+
+#arqueros, #defensores, #volantes, #delanteros, #DT{
+    font-size: 24pt;
+    padding: 2%;
+    font-weight: 700;
+    line-height: 44px;
+    color: #fff;
+}
+
+.fichas{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    z-index: 1;
+}
+
+.fichas .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.fichas .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.fichas .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fichas .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.cancha img{
+    position: absolute;
+    width: 85px;
+    right: 0;
+    filter: opacity(50%);
+    border-radius: 10px;
+    transform: perspective(600px) rotateY(0deg);
+    transition: .5s;
+}
+
+.fichas .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 1px 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px #000;
+}
+
+.fichas .director {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 5px 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px #000;
+}
+
+.fichas .director p{
+    letter-spacing: 1px;
+    font-size: 11pt;
+    line-height: 25px;
+}
+
+.fichas .formacion {
+    border-top: solid 1px #f3f3f3;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.fichas .formacion h4{
+    color: #f3f3f3;
+}
+
+.fichas .back .numero {
+    border-top: solid 1px #f3f3f3;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.fichas .back .numero h4{
+    color: #f3f3f3;
+}
+
+.fichas .back h3 {
+    font-size: 30px;
+    margin: 10px;
+    padding-top: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px rgb(243 200 41);
+    color: rgb(243 200 41);
+    /* border: 1px solid red; */
+}
+
+.fichas .back p{
+    letter-spacing: 1px;
+    font-size: 11pt;
+    line-height: 22px;
+}
+
+.fichas .back span{
+    color: rgb(243 200 41);
+}
+
+.fichas:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.fichas:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.fichas:hover .cancha img{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+
+
+/* FIXTURE */
+
+#fixture{
+    width: 100%;
+}
+
+legend{
+    margin: 10px;
+    border: 2px double white;
+    background-color: rgb(243 178 41);
+    color: rgb(16 63 121);
+    font-size: 1.2vw;
+    padding: 8px;
+}
+
+#fixture > fieldset{
+    background-color: rgb(16 63 121);
+    color: rgb(243 178 41);
+    font-size: 0.95vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+    margin: 20px;
+}
+
+fieldset h3{
+    padding-bottom: 10px;
+}
+
+fieldset div{
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    width: 8%;
+}
+
+fieldset div p {
+    padding-bottom: 3px;
+}
+
+.versus{
+    /* border: solid 1px red; */
+    width: 10%;
+}
+
+/* CAMISETAS */
+
+#camisetas{
+    width: 100%;
+    margin-top: 15px;
+}
+
+/*Slider camisetas*/
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  button:focus {
+    outline: none;
+    border: none;
+  }
+
+  .app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 0;
+  }
+
+  .app__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+  }
+
+  .app__bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+    opacity: 0.8;
+  }
+
+  .app__bg__image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
+    width: 180%;
+    height: 180%;
+    transition: transform 1000ms ease, opacity 1000ms ease;
+    overflow: hidden;
+  }
+
+  .app__bg__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .app__bg__image.current--image {
+    opacity: 1;
+    --image-translate-offset: 0;
+  }
+
+  .app__bg__image.previous--image, .app__bg__image.next--image {
+    opacity: 0;
+  }
+
+  .app__bg__image.previous--image {
+    --image-translate-offset: -25%;
+  }
+
+  .app__bg__image.next--image {
+    --image-translate-offset: 25%;
+  }
+
+  .cardList {
+    position: absolute;
+    width: calc(3 * var(--card-width));
+    height: auto;
+  }
+
+  .cardList__btn {
+    --btn-size: 35px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+
+  .cardList__btn.btn--left {
+    left: -15%;
+  }
+
+  .cardList__btn.btn--right {
+    right: -15%;
+  }
+
+  .cardList__btn .icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardList__btn .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardList .cards__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+
+  .card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateX(var(--card-translateX-offset)) translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
+    display: inline-block;
+    width: var(--card-width);
+    height: var(--card-height);
+    transition: transform var(--card-transition-duration) var(--card-transition-easing);
+    user-select: none;
+    border: 1.5px solid black;
+    border-radius: 3%;
+}
+
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+    transition: opacity var(--card-transition-duration) var(--card-transition-easing);
+    opacity: calc(1 - var(--opacity));
+    border-radius: 3%;
+  }
+
+  .card__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card.current--card {
+    z-index: 2;
+    --current-card-rotation-offset: 0;
+    --card-translateX-offset: 0;
+    --card-rotation-offset: var(--current-card-rotation-offset);
+    --card-scale-offset: 1.5;
+    --opacity: 0.8;
+  }
+
+  .card.previous--card {
+    --card-translateX-offset: calc(-1.15 * var(--card-width) * 1.1);
+    --card-rotation-offset: -15deg;
+  }
+  .card.next--card {
+    --card-translateX-offset: calc(1.15 * var(--card-width) * 1.1);
+    --card-rotation-offset: 15deg;
+  }
+  .card.previous--card, .card.next--card {
+    --card-scale-offset: 1;
+    --opacity: 0.4;
+  }
+
+  .card__image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3%;
+  }
+
+  .card .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .frente {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .frente img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .atras {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card:hover .frente{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .atras{
+  transform: perspective(600px) rotateY(360deg);
+}
+
+  .infoList {
+    position: absolute;
+    width: calc(3 * var(--card-width));
+    height: var(--card-height);
+    pointer-events: none;
+  }
+  .infoList .info__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  .info {
+    margin-bottom: calc(var(--card-height) / 8);
+    margin-left: calc(var(--card-width) / 1.5);
+    transform: translateZ(2rem);
+    transition: transform var(--card-transition-duration) var(--card-transition-easing);
+  }
+  .info .text {
+    position: relative;
+    font-family: "Montserrat";
+    font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
+    white-space: nowrap;
+    color: #fff;
+    width: fit-content;
+  }
+  .info .name,
+  .info .location {
+    text-transform: uppercase;
+  }
+  .info .location {
+    font-weight: 800;
+  }
+  .info .location {
+    --mg-left: 40px;
+    --text-size-offset: 0.12;
+    font-weight: 600;
+    margin-left: var(--mg-left);
+    margin-bottom: calc(var(--mg-left) / 2);
+    padding-bottom: 0.8rem;
+  }
+  .info .location::before, .info .location::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    left: 0%;
+    transform: translate(calc(-1 * var(--mg-left)), -50%);
+  }
+  .info .location::before {
+    top: 40%;
+    width: 20px;
+    height: 5px;
+  }
+  .info .location::after {
+    bottom: 0;
+    width: 60px;
+  }
+
+  .info.current--info {
+    opacity: 1;
+    display: block;
+  }
+  .info.previous--info, .info.next--info {
+    opacity: 0;
+    display: none;
+  }
+
+  #link button{
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: 500;
+    border: 1px solid #02236D;
+    border-radius: 5px;
+    background-color: #F3B229;
+    color: #02236D;
+  }
+
+  @media only screen and (min-width: 1802px) {
+    /* :root {
+    } */
+  }
+  .support {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    display: flex;
+  }
+  .support a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.8rem;
+    backface-visibility: hidden;
+    transition: all 150ms ease;
+  }
+  .support a:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 1802px) {
+    :root {
+      --card-width: 15vw;
+      --card-height: 20vw;
+    }
+
+    #link button {
+      margin-top: 15px;
+    }
+  }
+
+  /* Footer */
+footer {
+  background-color: #1D293E;
+  color: #fff;
+  margin-top: 2%;
+  width: 100%;
+}
+
+footer address{
+  display: inline-block; /*volví la direccion (que se maneja en linea) en un bloque*/
+  font-family: Helvetica;
+  font-size: 1vw;
+  width: 30%;
+  position: relative;
+  left: 5%;
+  bottom:25px;
+  line-height:25px;
+}
+
+.logo{
+width: 100px;
+position: relative;
+left: 4%;
+}
+
+.cuenta{
+  width: 3%;
+  height: 3%;
+  margin-left: 1%;
+  position:relative;
+  float: right;
+  right: 20px;
+  bottom:10px;
+  border-radius: 12px;
+}
+
+#mapa{
+  float: right;
+  border-radius: 10px;
+  border: 5px dashed #fff;
+  position: relative;
+  margin-top: 3%;
+  margin-right: -13%;
+  width: 12%;
+}
+
+.footerWeb{
+  margin-bottom: 1%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1D293E;
+  color: #F3B229;
+  text-align: center;
+  z-index: 1;
+}

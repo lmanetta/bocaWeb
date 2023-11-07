@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <canvas id="world"></canvas>
+        <img id="bocaLogo" src="Imagen/Boca_Juniors_logo.png" alt="Escudo de Boca">
+        <h1>Club Atl<span>ético Boc</span>a Juniors</h1>
+    </header>
+
+
+    <!-- Menu -->
+    <nav>
+        <ul class="encabezado">
+          <li><a href="#plantel">Plantel</a>
+              <ul>
+                  <li><a href="#arqueros">Arqueros</a></li>
+                  <li><a href="#defensores">Defensores</a></li>
+                  <li><a href="#volantes">Volantes</a></li>
+                  <li><a href="#delanteros">Delanteros</a></li>
+                  <li><a href="#DT">Director Técnico</a></li>
+               </ul>
+          </li>
+          <li><a href="#fixture">Fixture</a>
+              <ul>
+                <li><a href="#lig_prof">Liga Profesional 2021</a></li>
+                <li><a href="#copa_lib">Copa CONMEBOL Libertadores</a></li>
+                <li><a href="#copa_arg">Copa Argentina</a></li>
+              </ul>
+          </li>
+          <li><a href="#camisetas">Camiseta</a></li>
+          <li id="usuarioInfo" style="display: none">
+            <a href="index.html" id="holaUsuario">¡Hola <span id="nombreUsuario"></span>!</a>
+            <ul>
+                <li><a href="#" id="cerrarSesionBtn">Cerrar sesión</a></li>
+            </ul>
+          </li>
+          <li><a href="Login/login.html" id="iniciarSesionLink" onclick="toggleSesion()"> Iniciar sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- Plantel -->
+    <div id="plantel">
+        <h2 class="tituloPlantel">Plantel - Primera División</h2>
+
+
+        <!-- ARQUEROS -->
+        <h3 id="arqueros">Arqueros</h3>
+    </div>
+    <div class="jugadores">
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/chiquito_Romero.jpg" alt="Sergio Romero">
+                <h3>Sergio Romero</h3>
+            </div>
+            <div class="face back">
+                <h3>Sergio Romero</h3>
+                <p><span>Fecha de nacimiento:</span> 22/02/1987</p>
+                <p><span>Lugar de nacimiento:</span> Bernardo de Irigoyen, Misiones, Argentina</p>
+                <p><span>Altura:</span> 1,92</p>
+                <p><span>Peso:</span> 88</p>
+                <p><span>Debut deportivo:</span> Racing (11/02/07)</p>
+                <p><span>Debut en Boca:</span> 1 - 0 vs Atl. Tucumán || Torneo de la Liga Profesional (Local - 29/01/2023)</p>
+                <p><span>Procedencia:</span> Venezia</p>
+                <div class="numero">
+                    <h4>Nº 1</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/javi_Garcia.jpg" alt="Javier García">
+                <h3>Javier García</h3>
+            </div>
+            <div class="face back">
+                <h3>Javier García</h3>
+                <p><span>Fecha de nacimiento:</span> 29/01/1987</p>
+                <p><span>Lugar de nacimiento:</span> Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,80</p>
+                <p><span>Peso:</span> 75</p>
+                <p><span>Debut deportivo:</span> Boca (24/08/2008)</p>
+                <p><span>Debut en Boca:</span> 2 - 1 vs Lanús || Torneo Apertura (Local - 24/08/08)</p>
+                <p><span>Procedencia:</span> Racing</p>
+                <div class="numero">
+                    <h4>Nº 13</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/leandro_Brey.jpg" alt="Leandro Brey">
+                <h3>Leandro Brey</h3>
+            </div>
+            <div class="face back">
+                <h3>Leandro Brey</h3>
+                <p><span>Fecha de nacimiento:</span> 21/09/2002</p>
+                <p><span>Lugar de nacimiento:</span> Lomas de Zamora, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,91</p>
+                <p><span>Peso:</span> 89</p>
+                <p><span>Debut deportivo:</span> Los Andes (06/03/2021)</p>
+                <p><span>Debut en Boca:</span> 2 - 0 vs Always Ready || Copa Libertadores (Local - 12/04/2022)</p>
+                <p><span>Procedencia:</span> Los Andes</p>
+                <div class="numero">
+                    <h4>Nº 12</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DEFENSORES -->
+    <div id="defensores">
+            <h3>Defensores</h3>
+    </div>
+    <div class="jugadores">
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/facu_Roncaglia.jpg" alt="Facundo Roncaglia">
+                <h3>Facundo Roncaglia</h3>
+            </div>
+            <div class="face back">
+                <h3>Facundo Roncaglia</h3>
+                <p><span>Fecha de nacimiento:</span> 10/02/1987</p>
+                <p><span>Lugar de nacimiento:</span> Chajarí, Entre Ríos, Argentina</p>
+                <p><span>Altura:</span> 1,79</p>
+                <p><span>Peso:</span> 77</p>
+                <p><span>Debut deportivo:</span> Boca (21/10/2007)</p>
+                <p><span>Debut en Boca:</span> 1 - 1 vs Estudiante LP || Apertura (Local - 21/10/2007)</p>
+                <p><span>Procedencia:</span> Aris de Limassol</p>
+                <div class="numero">
+                    <h4>Nº 2</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/marcelo_Saracchi.jpg" alt="Marcelo Saracchi">
+                <h3>Marcelo Saracchi</h3>
+            </div>
+            <div class="face back">
+                <h3>Marcelo Saracchi</h3>
+                <p><span>Fecha de nacimiento:</span> 23/04/1998</p>
+                <p><span>Lugar de nacimiento:</span> Paysandú, Uruguay</p>
+                <p><span>Altura:</span> 1,72</p>
+                <p><span>Peso:</span> 69</p>
+                <p><span>Debut deportivo:</span> Danubio FC (11/08/2015)</p>
+                <p><span>Debut en Boca:</span> 3 - 1 vs Platense || Copa de la Liga (Local - 18/08/23)</p>
+                <p><span>Procedencia:</span> Levante Unión Deportiva</p>
+                <div class="numero">
+                    <h4>Nº 3</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/nico_Figal.jpg" alt="Nicolás Figal">
+                <h3>Nicolás Figal</h3>
+            </div>
+            <div class="face back">
+                <h3>Nicolás Figal</h3>
+                <p><span>Fecha de nacimiento:</span> 03/04/1994</p>
+                <p><span>Lugar de nacimiento:</span> América, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,80</p>
+                <p><span>Peso:</span> 75</p>
+                <p><span>Debut deportivo:</span> Independiente (01/07/2014)</p>
+                <p><span>Debut en Boca:</span> 2 - 1 vs Aldosivi || Copa Liga Profesional (Visitante - 16/02/2022)</p>
+                <p><span>Procedencia:</span> Inter de Miami</p>
+                <div class="numero">
+                    <h4>Nº 4</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/marcos_Rojo.jpg" alt="Marcos Rojo">
+                <h3>Marcos Rojo</h3>
+            </div>
+            <div class="face back">
+                <h3>Marcos Rojo</h3>
+                <p><span>Fecha de nacimiento:</span> 20/03/1990</p>
+                <p><span>Lugar de nacimiento:</span> La Plata, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,86</p>
+                <p><span>Peso:</span> 82</p>
+                <p><span>Debut deportivo:</span> Estudiantes LP (07/12/2008)</p>
+                <p><span>Debut en Boca:</span> 1 - 1 vs River || Copa de la Liga Profesional (Local - 14/03/2021)</p>
+                <p><span>Procedencia:</span> Manchester United</p>
+                <div class="numero">
+                    <h4>Nº 6</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/nico_Valentini.jpg" alt="Nicolás Valentini">
+                <h3>Nicolás Valentini</h3>
+            </div>
+            <div class="face back">
+                <h3>Nicolás Valentini</h3>
+                <p><span>Fecha de nacimiento:</span> 06/04/2001</p>
+                <p><span>Lugar de nacimiento:</span> Junín, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,87</p>
+                <p><span>Peso:</span> 79</p>
+                <p><span>Debut deportivo:</span> Boca (08/05/2021)</p>
+                <p><span>Debut en Boca:</span> 0 - 1 vs Patronato || Copa de la Liga Profesional (Visitante - 08/05/2021)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 15</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/luis_Advincula.jpg" alt="Luis Advincula">
+                <h3>Luis Advincula</h3>
+            </div>
+            <div class="face back">
+                <h3>Luis Advincula</h3>
+                <p><span>Fecha de nacimiento:</span> 02/03/1990</p>
+                <p><span>Lugar de nacimiento:</span> El Carmen, Perú</p>
+                <p><span>Altura:</span> 1,80</p>
+                <p><span>Peso:</span> 80</p>
+                <p><span>Debut deportivo:</span> Juan Aurich (21/02/2009)</p>
+                <p><span>Debut en Boca:</span> (4)0 - 0(1) vs River || Octavos Copa Argentina (04/08/2021)</p>
+                <p><span>Procedencia:</span> Rayo Vallecano</p>
+                <div class="numero">
+                    <h4>Nº 17</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/frank_Fabra.jpg" alt="Frank Fabra">
+                <h3>Frank Fabra</h3>
+            </div>
+            <div class="face back">
+                <h3>Frank Fabra</h3>
+                <p><span>Fecha de nacimiento:</span> 22/02/1991</p>
+                <p><span>Lugar de nacimiento:</span> Nechí, Colombia</p>
+                <p><span>Altura:</span> 1,74</p>
+                <p><span>Peso:</span> 73</p>
+                <p><span>Debut deportivo:</span> Envigado F.C. (22/07/2010)</p>
+                <p><span>Debut en Boca:</span> 0 - 1 vs Atl.Tucumán || Campeonato (Visitante - 14/02/2016)</p>
+                <p><span>Procedencia:</span> Independiente Medellín</p>
+                <div class="numero">
+                    <h4>Nº 18</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/colo_Barco.jpg" alt="Colo Barco">
+                <h3>Valentín Barco</h3>
+            </div>
+            <div class="face back">
+                <h3>Valentín Barco</h3>
+                <p><span>Fecha de nacimiento:</span> 23/07/2004</p>
+                <p><span>Lugar de nacimiento:</span> 25 de mayo, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,70</p>
+                <p><span>Peso:</span> 64</p>
+                <p><span>Debut deportivo:</span> Boca (16/07/2021)</p>
+                <p><span>Debut en Boca:</span> 1 - 1 vs Unión || Campeonato (Visitante - 16/07/2021)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 19</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/bruno_Valdez.jpg" alt="Bruno Valdez">
+                <h3>Bruno Valdez</h3>
+            </div>
+            <div class="face back">
+                <h3>Bruno Valdez</h3>
+                <p><span>Fecha de nacimiento:</span> 06/10/1992</p>
+                <p><span>Lugar de nacimiento:</span> Fernando de la Mora, Paraguay</p>
+                <p><span>Altura:</span> 1,81</p>
+                <p><span>Peso:</span> 78</p>
+                <p><span>Debut deportivo:</span> Sol de América (13/08/2011)</p>
+                <p><span>Debut en Boca:</span> 1 - 0 vs Atl. Tucumán || Campeonato de la LPF (Local - 29/01/2023)</p>
+                <p><span>Procedencia:</span> Club América</p>
+                <div class="numero">
+                    <h4>Nº 25</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/nahuel_Genez.jpg" alt="Nahuel Génez">
+                <h3>Nahuel Génez</h3>
+            </div>
+            <div class="face back">
+                <h3>Nahuel Génez</h3>
+                <p><span>Fecha de nacimiento:</span> 18/06/2003</p>
+                <p><span>Lugar de nacimiento:</span> Carlos Spegazzini, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,73</p>
+                <p><span>Peso:</span> 70</p>
+                <p><span>Debut deportivo:</span> Boca (24/07/2021)</p>
+                <p><span>Debut en Boca:</span> 0 - 0 vs Banfield || Campeonato (Visitante - 24/07/2021)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 35</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/aaron_Anselmino.jpg" alt="Aaron Anselmino">
+                <h3>Aaron Anselmino</h3>
+            </div>
+            <div class="face back">
+                <h3>Aaron Anselmino</h3>
+                <p><span>Fecha de nacimiento:</span> 29/04/2005</p>
+                <p><span>Lugar de nacimiento:</span> Bernardo Larroudé, La Pampa, Argentina</p>
+                <p><span>Altura:</span> 1,86</p>
+                <p><span>Peso:</span> -</p>
+                <p><span>Debut deportivo:</span> Boca (10/06/2023)</p>
+                <p><span>Debut en Boca:</span> 1 - 1 vs Lanús || Torneo de la Liga Profesional (Local - 10/06/2023)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 38</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/lautaro_DiLollo.jpg" alt="Lautaro Di Lollo">
+                <h3>Lautaro Di Lollo</h3>
+            </div>
+            <div class="face back">
+                <h3>Lautaro Di Lollo</h3>
+                <p><span>Fecha de nacimiento:</span> 03/10/2004</p>
+                <p><span>Lugar de nacimiento:</span> Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,89</p>
+                <p><span>Peso:</span> 86</p>
+                <p><span>Debut deportivo:</span> Boca (16/07/2022)</p>
+                <p><span>Debut en Boca:</span> 1 - 0 vs Talleres || Campeonato (Local - 16/07/2022)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 40</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/lucas_Blondel.jpg" alt="Lucas Blondel">
+                <h3>Lucas Blondel</h3>
+            </div>
+            <div class="face back">
+                <h3>Lucas Blondel</h3>
+                <p><span>Fecha de nacimiento:</span> 14/09/1996</p>
+                <p><span>Lugar de nacimiento:</span> Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,78</p>
+                <p><span>Peso:</span> 77</p>
+                <p><span>Debut deportivo:</span> Atlético de Rafaela (02/06/2016)</p>
+                <p><span>Debut en Boca:</span> 3 - 1 vs Platense || Copa de la Liga (Local - 18/08/2023)</p>
+                <p><span>Procedencia:</span> Tigre</p>
+                <div class="numero">
+                    <h4>Nº 42</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/chelo_Weigandt.jpg" alt="Chelo Weigandt">
+                <h3>Marcelo Weigandt</h3>
+            </div>
+            <div class="face back">
+                <h3>Marcelo Weigandt</h3>
+                <p><span>Fecha de nacimiento:</span> 11/01/2000</p>
+                <p><span>Lugar de nacimiento:</span> Avellaneda, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,75</p>
+                <p><span>Peso:</span> 75</p>
+                <p><span>Debut deportivo:</span> Boca (19/04/2019)</p>
+                <p><span>Debut en Boca:</span> 2 - 0 vs Estudiantes Rio Cuarto || Copa Argentina (19/04/2019)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 57</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MEDIOCAMPO -->
+    <div id="volantes">
+        <h3>Volantes</h3>
+    </div>
+    <div class="jugadores">
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/ezequiel_Bullaude.jpg" alt="Ezequiel Bullaude">
+                <h3>Ezequiel Bullaude</h3>
+            </div>
+            <div class="face back">
+                <h3>Ezequiel Bullaude</h3>
+                <p><span>Fecha de nacimiento:</span> 26/10/2000</p>
+                <p><span>Lugar de nacimiento:</span> Maipú, Mendoza, Argentina</p>
+                <p><span>Altura:</span> 1,84</p>
+                <p><span>Peso:</span> 71</p>
+                <p><span>Debut deportivo:</span> Godoy Cruz (20/10/2018)</p>
+                <p><span>Debut en Boca:</span> (4)2 - 2(3) vs Almagro || Copa Argentina 20/09/2023</p>
+                <p><span>Procedencia:</span> Feyenoord de Róterdam</p>
+                <div class="numero">
+                    <h4>Nº 5</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/pol_Fernandez.jpg" alt="Pol Fernández">
+                <h3>Guillermo "Pol" Fernández</h3>
+            </div>
+            <div class="face back">
+                <h3>Guillermo "Pol" Fernández</h3>
+                <p><span>Fecha de nacimiento:</span> 11/10/1991</p>
+                <p><span>Lugar de nacimiento:</span> Granadero Baigorria, Santa fe, Argentina</p>
+                <p><span>Altura:</span> 1,76</p>
+                <p><span>Peso:</span> 74</p>
+                <p><span>Debut deportivo:</span> Boca (29/02/2012)</p>
+                <p><span>Debut en Boca:</span> 2 - 0 vs Central Córdoba || Copa Argentina (29/02/2012)</p>
+                <p><span>Procedencia:</span> Cruz Azul</p>
+                <div class="numero">
+                    <h4>Nº 8</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/esteban_Rolon.jpg" alt="Esteban Rolón">
+                <h3>Esteban Rolón</h3>
+            </div>
+            <div class="face back">
+                <h3>Esteban Rolón</h3>
+                <p><span>Fecha de nacimiento:</span> 25/03/1995</p>
+                <p><span>Lugar de nacimiento:</span> Posadas, Misiones, Argentina</p>
+                <p><span>Altura:</span> 1,78</p>
+                <p><span>Peso:</span> 70</p>
+                <p><span>Debut deportivo:</span> Argentinos Juniors (2016)</p>
+                <p><span>Debut en Boca:</span> 0 - 0 vs Unión || Liga Profesional (Visitante - 16/7/2021)</p>
+                <p><span>Procedencia:</span> Huracán</p>
+                <div class="numero">
+                    <h4>Nº 14</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/juanEdgardo_Ramirez.jpg" alt="Juan Edgardo Ramirez">
+                <h3>Juan Edgardo Ramirez</h3>
+            </div>
+            <div class="face back">
+                <h3>Juan Edgardo Ramirez</h3>
+                <p><span>Fecha de nacimiento:</span> 25/05/1993</p>
+                <p><span>Lugar de nacimiento:</span> Morón, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,74</p>
+                <p><span>Peso:</span> 72</p>
+                <p><span>Debut deportivo:</span> Argentinos Juniors (21/05/2011)</p>
+                <p><span>Debut en Boca:</span> 0 - 0 vs Talleres || Liga Profesional (Visitante - 01/08/2021)</p>
+                <p><span>Procedencia:</span> San Lorenzo</p>
+                <div class="numero">
+                    <h4>Nº 20</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/equi_Fernandez.jpg" alt="Equi Fernández">
+                <h3>Ezequiel Fernández</h3>
+            </div>
+            <div class="face back">
+                <h3>Ezequiel Fernández</h3>
+                <p><span>Fecha de nacimiento:</span> 25/07/2002</p>
+                <p><span>Lugar de nacimiento:</span> San Miguel, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,78</p>
+                <p><span>Peso:</span> 70</p>
+                <p><span>Debut deportivo:</span> Boca (08/05/2021)</p>
+                <p><span>Debut en Boca:</span> 0 - 1 vs Patronato || Copa de la Liga Profesional (Visitante - 08/05/2021)</p>
+                <p><span>Procedencia:</span> Tigre</p>
+                <div class="numero">
+                    <h4>Nº 21</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/pulpo_Gonzalez.jpg" alt="Pulpo Gonzalez">
+                <h3>Diego Gonzalez</h3>
+            </div>
+            <div class="face back">
+                <h3>Diego Gonzalez</h3>
+                <p><span>Fecha de nacimiento:</span> 09/02/1988</p>
+                <p><span>Lugar de nacimiento:</span> Lomas de Zamora, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,78</p>
+                <p><span>Peso:</span> 73</p>
+                <p><span>Debut deportivo:</span> Lanús (12/08/2007)</p>
+                <p><span>Debut en Boca:</span> 2 - 0 || vs Newell's || Copa Diego Maradona (Visitante - 08/11/2020)</p>
+                <p><span>Procedencia:</span> Racing</p>
+                <div class="numero">
+                    <h4>Nº 23</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/cristian_Medina.jpg" alt="Cristian Medina">
+                <h3>Cristian Medina</h3>
+            </div>
+            <div class="face back">
+                <h3>Cristian Medina</h3>
+                <p><span>Lugar de nacimiento:</span> 01/06/2002</p>
+                <p><span>Fecha de nacimiento:</span> Moreno, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,78</p>
+                <p><span>Peso:</span> 70</p>
+                <p><span>Debut deportivo:</span> Boca (14/02/2021)</p>
+                <p><span>Debut en Boca:</span> 2 - 2 vs Gimnasia LP || Liga Profesional (Local - 14/02/2021)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 36</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/vicente_Taborda.jpg" alt="Vicente Taborda">
+                <h3>Vicente Taborda</h3>
+            </div>
+            <div class="face back">
+                <h3>Vicente Taborda</h3>
+                <p><span>Fecha de nacimiento:</span> 14/06/2001</p>
+                <p><span>Lugar de nacimiento:</span> Gualeguay, Entre Ríos, Argentina</p>
+                <p><span>Altura:</span> 1,78</p>
+                <p><span>Peso:</span> 70</p>
+                <p><span>Debut deportivo:</span> Boca (24/07/2023)</p>
+                <p><span>Debut en Boca:</span> 0 - 0 vs Banfield || Liga Profesional (Visitante - 24/07/2023)</p>
+                <p><span>Procedencia:</span> Platense</p>
+                <div class="numero">
+                    <h4>Nº 39</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/jorman_Campuzano.jpg" alt="Jorman Campuzano">
+                <h3>Jorman Campuzano</h3>
+            </div>
+            <div class="face back">
+                <h3>Jorman Campuzano</h3>
+                <p><span>Fecha de nacimiento:</span> 30/04/1996</p>
+                <p><span>Lugar de nacimiento:</span> Tamalameque, Colombia</p>
+                <p><span>Altura:</span> 1,75</p>
+                <p><span>Peso:</span> 68</p>
+                <p><span>Debut deportivo:</span> Deportivo Pereira (15/04/2015)</p>
+                <p><span>Debut en Boca:</span> 1 - 1 vs Newell's || Superliga (Visitante - 27/01/2019)</p>
+                <p><span>Procedencia:</span> Atlético Nacional</p>
+                <div class="numero">
+                    <h4>Nº 49</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DELANTEROS -->
+    <div id="delanteros">
+        <h3>Delanteros</h3>
+    </div>
+
+    <div class="jugadores">
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/changuito_Zeballos.jpg" alt="Exequiel Zeballos">
+                <h3>Exequiel Zeballos</h3>
+            </div>
+            <div class="face back">
+                <h3>Exequiel Zeballos</h3>
+                <p><span>Fecha de nacimiento:</span> 24/04/2002</p>
+                <p><span>Lugar de nacimiento:</span> La Banda, Santiago del Estero, Argentina</p>
+                <p><span>Altura:</span> 1,70</p>
+                <p><span>Peso:</span> 68</p>
+                <p><span>Debut deportivo:</span> Boca (29/11/2020)</p>
+                <p><span>Debut en Boca:</span> 2 - 0 vs Newell's || Copa Diego Maradona (Local - 29/11/2020)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 7</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/dario_Benedetto.jpg" alt="Pipa Benedetto">
+                <h3>Darío Benedetto</h3>
+            </div>
+            <div class="face back">
+                <h3>Darío Benedetto</h3>
+                <p><span>Fecha de nacimiento:</span> 17/05/1990</p>
+                <p><span>Lugar de nacimiento:</span> Berazategui, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,75</p>
+                <p><span>Peso:</span> 75</p>
+                <p><span>Debut deportivo:</span> Arsenal (09/11/2008)</p>
+                <p><span>Debut en Boca:</span> 1 - 2 vs Independiente (Ecu) || Copa Libertadores (Visitante - 07/07/16)</p>
+                <p><span>Procedencia:</span> Eiche (España)</p>
+                <div class="numero">
+                    <h4>Nº 9</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/edinson_Cavani.jpg" alt="Edinson Cavani">
+                <h3>Edinson Cavani</h3>
+            </div>
+            <div class="face back">
+                <h3>Edinson Cavani</h3>
+                <p><span>Fecha de nacimiento:</span> 14/02/1987</p>
+                <p><span>Lugar de nacimiento:</span> Salto, Uruguay</p>
+                <p><span>Altura:</span> 1,84</p>
+                <p><span>Peso:</span> 71</p>
+                <p><span>Debut deportivo:</span> Danubio (09/04/2006)</p>
+                <p><span>Debut en Boca:</span> (4)2 - 2(2) vs Nacional || Copa Libertadores 2023 (Local - 09/08/2023)</p>
+                <p><span>Procedencia:</span> Valencia CF</p>
+                <div class="numero">
+                    <h4>Nº 10</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/lucas_Janson.jpg" alt="Lucas Janson">
+                <h3>Lucas Janson</h3>
+            </div>
+            <div class="face back">
+                <h3>Lucas Janson</h3>
+                <p><span>Fecha de nacimiento:</span> 16/10/1994</p>
+                <p><span>Lugar de nacimiento:</span> Olevarría, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,71</p>
+                <p><span>Peso:</span> 66</p>
+                <p><span>Debut deportivo:</span> Tigre (09/08/2012)</p>
+                <p><span>Debut en Boca:</span> 0 - 0 vs Nacional || Copa Libertadores 2023 (Visitante - 02/08/2023)</p>
+                <p><span>Procedencia:</span> Vélez</p>
+                <div class="numero">
+                    <h4>Nº 11</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/miguelAngel_Merentiel.jpg" alt="La Bestia Merentiel">
+                <h3>Miguel Ángel Merentiel</h3>
+            </div>
+            <div class="face back">
+                <h3>Miguel Ángel Merentiel</h3>
+                <p><span>Fecha de nacimiento:</span> 24/02/1996</p>
+                <p><span>Lugar de nacimiento:</span> Paysandú, Uruguay</p>
+                <p><span>Altura:</span> 1,75</p>
+                <p><span>Peso:</span> 70</p>
+                <p><span>Debut deportivo:</span> El Tanque Sisley (09/01/2017)</p>
+                <p><span>Debut en Boca:</span> 0 - 0 vs Central Córdoba || Campeonato de la LPF 2023 (Local - 05/02/2023)</p>
+                <p><span>Procedencia:</span> Palmeiras</p>
+                <div class="numero">
+                    <h4>Nº 16</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/norberto_Briasco.jpg" alt="Norberto Briasco">
+                <h3>Norberto Briasco</h3>
+            </div>
+            <div class="face back">
+                <h3>Norberto Briasco</h3>
+                <p><span>Fecha de nacimiento:</span>29/02/1996</p>
+                <p><span>Lugar de nacimiento:</span> Marcos Paz, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,86</p>
+                <p><span>Peso:</span> 82</p>
+                <p><span>Debut deportivo:</span> Huracán (27/08/2016)</p>
+                <p><span>Debut en Boca:</span> 0 - 0 vs At. Mineiro || Copa Libertadores (Local - 13/07/2021)</p>
+                <p><span>Procedencia:</span> Huracán</p>
+                <div class="numero">
+                    <h4>Nº 29</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/luca_Langoni.jpg" alt="Luca Langoni">
+                <h3>Luca Langoni</h3>
+            </div>
+            <div class="face back">
+                <h3>Luca Langoni</h3>
+                <p><span>Fecha de nacimiento:</span> 09/02/2002</p>
+                <p><span>Lugar de nacimiento:</span> Gregorio de Laferrere, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,73</p>
+                <p><span>Peso:</span> 66</p>
+                <p><span>Debut deportivo:</span> Boca (19/06/22)</p>
+                <p><span>Debut en Boca:</span> 3 - 1 vs Barracas Central || Liga Profesional
+                    (Visitante - 19/06/22)</p>
+                <p><span>Procedencia:</span> -</p>
+                <div class="numero">
+                    <h4>Nº 41</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DT -->
+    <div id="DT">
+        <h3>Director Técnico</h3>
+    </div>
+    <div class="jugadores">
+        <div class="fichas">
+            <div class="face front">
+                <img src="Imagen/jorge_Almiron.jpg" alt="Jorge Almirón">
+                <h3>Jorge Almirón</h3>
+            </div>
+            <div class="face back director">
+                <h3>Jorge Almirón</h3>
+                <p><span>Fecha de nacimiento:</span> 19/06/1971</p>
+                <p><span>Lugar de nacimiento:</span> San Miguel, Buenos Aires, Argentina</p>
+                <p><span>Altura:</span> 1,85</p>
+                <p><span>Debut como entrenador:</span> Dorados de Sinaloa (16/10/08)</p>
+                <p><span>Debut en Boca:</span> 0 - 1 vs San Lorenzo || Liga Profesional 2023
+                    (Visitante - 12/04/23)</p>
+                <p><span>Procedencia:</span> Eiche CF</p>
+                <div class="formacion">
+                    <h4><span>Formación preferida:</span> 4-3-3</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FIXTURE -->
+    <div id="fixture">
+        <h2 class="tituloFixture">Fixture</h2>
+        <fieldset>
+            <legend id="lig_prof">Copa de la Liga 2023 - Grupo B</legend> 
+            <div class="fechas">
+                <h3>JORNADA</h3>
+                <p>FECHA 1</p>
+                <p>FECHA 2</p>
+                <p>FECHA 3</p>
+                <p>FECHA 4</p>
+                <p>FECHA 5</p>
+                <p>FECHA 6</p>                   
+                <p>FECHA 7</p>                   
+                <p>FECHA 8</p>                   
+                <p>FECHA 9</p>                   
+                <p>FECHA 10</p>                   
+                <p>FECHA 11</p>    
+                <p>FECHA 12</p>    
+                <p>FECHA 13</p>    
+                <p>FECHA 14</p>    
+            </div>
+            <div class="date"> 
+                <H3>FECHA</H3>
+                <p>18/08/2023</p>
+                <p>27/08/2023</p>
+                <p>03/09/2023</p>
+                <p>15/09/2023</p>
+                <p>19/09/2023</p>
+                <p>23/09/2023</p>
+                <p>01/10/2023</p>
+                <p>08/10/2023</p>
+                <p>18/10/2023</p>
+                <p>25/10/2023</p>
+                <p>29/10/2023</p>
+                <p>05/11/2023</p>
+                <p>12/11/2023</p>
+                <p>26/11/2023</p>
+            </div>
+
+            <div class="estadio">
+                <H3>ÁMBITO</H3>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+            </div>
+      
+            <div class="resultado">
+                <h3>RESULTADO</h3>
+                <p>3 - 1 (G)</p>
+                <p>0 - 1 (G)</p>
+                <p>0 - 1 (P)</p>
+                <p>1 - 0 (P)</p>
+                <p>0 - 3 (G)</p>
+                <p>1 - 1 (E)</p>
+                <p>0 - 2 (P)</p>
+                <p>4 - 3 (P)</p>
+                <p>2 - 1 (G)</p>
+                <p>2 - 1 (P)</p>
+                <p>0 - 0 (E)</p>
+                <p>-</p>
+                <p>-</p>
+                <p>-</p>
+            </div>
+
+            <div class="versus">
+                <h3>VERSUS</h3>
+                <p>Platense</p>
+                <p>Sarmiento</p>
+                <p>Tigre</p>
+                <p>Defensa y Justicia</p>
+                <p>Central Córdoba</p>
+                <p>Lanús</p>
+                <p>Riber</p>
+                <p>Belgrano</p>
+                <p>Unión</p>
+                <p>Racing</p>
+                <p>Estudiantes</p>
+                <p>San Lorenzo</p>
+                <p>Newell's</p>
+                <p>Godoy Cruz</p>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend id="copa_lib">Copa CONMEBOL Libertadores</legend>
+            <div class="fechas">
+                <h3>JORNADA</h3>
+                <p>FECHA 1</p>
+                <p>FECHA 2</p>
+                <p>FECHA 3</p>
+                <p>FECHA 4</p>
+                <p>FECHA 5</p>
+                <p>FECHA 6</p>
+                <p>OCTAVOS</p>
+                <p>OCTAVOS</p>
+                <p>CUARTOS</p>
+                <p>CUARTOS</p>
+                <p>SEMIFINAL</p>
+                <p>SEMIFINAL</p>
+                <p>FINAL</p>
+            </div>
+            <div class="date">
+                <H3>FECHA</H3>
+                <p>06/04/2023</p>
+                <p>18/04/2023</p>
+                <p>03/05/2023</p>
+                <p>24/05/2023</p>
+                <p>06/06/2023</p>
+                <p>29/06/2023</p>
+                <p>02/08/2023</p>
+                <p>09/08/2023</p>
+                <p>23/08/2023</p>
+                <p>30/08/2023</p>
+                <p>28/09/2023</p>
+                <p>05/10/2023</p>
+                <p>04/11/2023</p>
+            </div>
+
+            <div class="estadio">
+                <H3>ÁMBITO</H3>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+                <p>VISITANTE</p>
+                <p>LOCAL</p>
+            </div>
+            
+            <div class="resultado">
+                <h3>RESULTADO</h3>
+                <p>0 - 0</p>
+                <p>2 - 1</p>
+                <p>0 - 2</p>
+                <p>1 - 0</p>
+                <p>1 - 0</p>
+                <p>4 - 0</p>
+                <p>0 - 0</p>
+                <p>(4)2 - 2(2)</p>
+                <p>0 - 0</p>
+                <p>(1)0 - 0(4)</p>
+                <p>0 - 0</p>
+                <p>(2)1 - 1(4)</p>
+                <p>-</p>
+            </div>
+
+            <div class="versus">
+                <h3>VERSUS</h3>
+                <p>Monagas</p>
+                <p>Deportivo Pereira</p>
+                <p>Colo Colo</p>
+                <p>Deportivo Pereira</p>
+                <p>Colo Colo</p>
+                <p>Monagas</p>
+                <p>Nacional</p>
+                <p>Nacional</p>
+                <p>Racing</p>
+                <p>Racing</p>
+                <p>Palmeiras</p>
+                <p>Palmeiras</p>
+                <p>Fluminense</p>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend id="copa_arg">Copa Argentina</legend>
+            <div class="fechas">
+                <h3>JORNADA</h3>
+                <p>32avos</p>
+                <p>16avos</p>
+                <p>8vos</p>
+                <p>4tos</p>
+                <p>SEMIFINAL</p>
+            </div>
+            <div class="date">
+                <H3>FECHA</H3>
+                <p>25/03/2023</p>
+                <p>20/07/2023</p>
+                <p>10/09/2023</p>
+                <p>11/10/2023</p>
+                <p>15/11/2023</p>
+            </div>
+            
+            <div class="resultado">
+                <h3>RESULTADO</h3>
+                <p>2 - 1</p>
+                <p>2 - 1</p>
+                <p>(4)2 - 2(3)</p>
+                <p>(4)1 - 1(1)</p>
+                <p>-</p>
+            </div>
+
+            <div class="versus">
+                <h3>BOCA VS</h3>
+                <p>Olimpo</p>
+                <p>Barracas Central</p>
+                <p>Club Almagro</p>
+                <p>Talleres</p>
+                <p>Estudiantes</p>
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- CAMISETAS -->
+     <div id="camisetas">  
+        <h2 class="tituloCamisetas">Camisetas</h2>
+    </div>
+
+    <div class="app">
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </div>
+            </button>
+    
+            <div class="cards__wrapper">
+                <div class="card current--card">
+                    <div  class="card__image">
+                        <div class="cara frente">
+                            <img id="imagen1" src="Imagen/titular_frente.jpg" alt="Camiseta de frente">
+                        </div>
+                        <div class="cara atras">
+                            <img src="Imagen/titular_dorsal.jpg" alt="Camiseta de atrás">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card next--card">
+                    <div id="suplente" class="card__image">
+                        <div class="cara frente">
+                            <img id="imagen2" src="Imagen/suplente_frente.jpg" alt="Camiseta de frente">
+                        </div>
+                        <div class="cara atras">
+                            <img src="Imagen/suplente_dorsal.jpg" alt="Camiseta de atrás">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card previous--card">
+                    <div id="alternativa" class="card__image">
+                        <div class="cara frente">
+                            <img id="imagen3" src="Imagen/alternativa_frente.jpg" alt="Camiseta de frente">
+                        </div>
+                        <div class="cara atras">
+                            <img src="Imagen/alternativa_dorsal.jpg" alt="Camiseta de atrás">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    
+        <div class="infoList">
+            <div class="info__wrapper">
+                <div class="info current--info">
+                    <h1 class="text name">Titular</h1>
+                    <h4 class="text location">2023</h4>
+                </div>
+    
+                <div class="info next--info">
+                    <h1 class="text name">Suplente</h1>
+                    <h4 class="text location">2023</h4>
+                </div>
+    
+                <div class="info previous--info">
+                    <h1 class="text name">Alternativa</h1>
+                    <h4 class="text location">2023</h4>
+                </div>
+            </div>
+        </div>
+    
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+                <img src="Imagen/titular_frente.jpg" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+                <img src="Imagen/suplente_frente.jpg" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+                <img src="Imagen/alternativa_frente.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <a id="link" class="link_camiseta" href=""><button class="btn btn-outline-info">Click para comprar</button></a>
+
+    
+    
+    <svg class="icons" style="display: none;">
+        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400'
+                         style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400'
+                         style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+    </svg>
+    
+    <!-- partial -->
+      <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script><script  src="app.js"></script>
+    
+
+
+
+    <!-- FOOTER -->
+    
+    <footer class="pie">
+      
+        <div class="footerWeb">
+            <br/><br/>
+        
+            <img class="logo" src="Imagen/Boca_Juniors_logo.png" alt="Logo">
+            
+            <address>
+                
+                BOCA JRS OFICIAL
+                <br/>
+                Direción: Brandsen 805, Capital Federal
+                <br/>
+                Teléfono: 5777-1200    
+            </address>
+            
+            
+            
+            <img class="cuenta" src="Imagen/facebook.png" alt="Facebook"  usemap="#facebook">
+            <img class="cuenta" src="Imagen/Icono instagram.png" alt="Instagram"  usemap="#instagram">
+            <img class="cuenta" src="Imagen/Icono-X.jpg" alt="Twitter"  usemap="#X">
+            <img class="cuenta" src="Imagen/Icono youtu.png" alt="Youtube" usemap="#youtube">
+            <map name="facebook">
+                <area shape="default" href="https://www.facebook.com/BocaJuniors/" target="_blank" alt="BOCA">
+            </map>  
+            <map name="instagram">
+                <area shape="default" href="https://www.instagram.com/bocajrsoficial/?hl=es-la" target="_blank" alt="bocajrsoficial">
+            </map>  
+            <map name="X">
+                <area shape="default" href="https://twitter.com/BocaJrsOficial" target="_blank" alt="@BocaJrsOficial">
+            </map> 
+            <map name="youtube">
+                <area shape="default" href="https://www.youtube.com/c/bocajuniors" target="_blank" alt="Club Atlético Boca Juniors">
+            </map> 
+            
+            
+            <img id="mapa" src="Imagen/Mapa Bombonera.jpg" alt="Mapa Bombonera" usemap="#bomboneramap">
+            <map name="bomboneramap">
+                <area shape="default" href="https://goo.gl/maps/SMaDLwbJSa6FT2T86" target="_blank" alt="Bombonera">
+            </map>
+            
+            <br/><br/>
+        </div>
+  
+          <p class="footer">Derechos Reservados &copy; 2023 - Luciana Manetta</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

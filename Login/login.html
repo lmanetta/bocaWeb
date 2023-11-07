@@ -1,0 +1,91 @@
+<!-- Define que el documento esta bajo el estandar de HTML 5 -->
+<!doctype html>
+
+<!-- Representa la raíz de un documento HTML o XHTML. Todos los demás elementos deben ser descendientes de este elemento. -->
+<html lang="es">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <title> Formulario de Acceso </title>    
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Videojuegos & Desarrollo">
+        <meta name="description" content="Muestra de un formulario de acceso en HTML y CSS">
+        <meta name="keywords" content="Formulario Acceso, Formulario de LogIn">
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        
+        <!-- Link hacia el archivo de estilos css -->
+        <link rel="stylesheet" href="css/login.css">
+        
+        <style type="text/css">
+            
+        </style>
+        
+        <script type="text/javascript">
+        
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="contenedor">
+            <div id="central">
+                <div id="login">
+                    <div class="titulo">
+                        Bienvenido al mundo Boca
+                    </div>
+                    <form id="loginform">
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+                        
+                        <input type="password" placeholder="Contraseña" id="password" name="password" required>
+                        
+                        <a href="../index.html"><button type="submit" title="Ingresar" name="Ingresar">INICIAR</button></a>
+                    </form>
+                    <div class="pie-form">
+                        <!-- <a href="#">¿Olvidaste tu contraseña?</a> -->
+                        <a href="registro.html">¿Todavía no estás registrado? Click aquí</a>
+                    </div>
+                </div>
+                <div class="inferior">
+                    <a href="../index.html">Volver</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('loginform').addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            console.log('Ingresando a la función de inicio de sesión');
+
+            const usuario = document.getElementById('usuario').value;
+            const password = document.getElementById('password').value;
+
+            console.log('Nombre de usuario:', usuario);
+            console.log('Contraseña:', password);
+
+            const usuarioRegistrado = localStorage.getItem('usuario');
+            const passwordRegistrado = localStorage.getItem('password');
+
+            console.log('Usuario almacenado:', usuarioRegistrado);
+console.log('Contraseña almacenada:', passwordRegistrado);
+
+            if (usuario === usuarioRegistrado && password === passwordRegistrado) {
+                // Inicio de sesión exitoso
+                alert(`¡Bienvenido, ${usuario}!`);
+                localStorage.setItem('usuarioAutenticado', 'true'); // Almacena una bandera de inicio de sesión
+                window.location.href = "../index.html"; // Va a la página principal
+            } else {
+                // Credenciales incorrectas
+                alert("Credenciales incorrectas. Inténtalo de nuevo.");
+            }
+        });
+        </script>
+    </body>
+</html>
